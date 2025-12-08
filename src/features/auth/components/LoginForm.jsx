@@ -7,7 +7,7 @@ import {
   Typography,
   Stack,
 } from "@mui/material";
-import { useAuthContext } from "../../../App/providers/AuthProvider";
+import { useAuthContext } from "../../../app/providers/AuthProvider";
 import { useNavigate } from "react-router-dom";
 
 export function LoginForm() {
@@ -41,6 +41,10 @@ export function LoginForm() {
     } finally {
       setSubmitting(false);
     }
+  };
+
+  const handleGoToSignUp = () => {
+    navigate("/signup");
   };
 
   return (
@@ -93,6 +97,15 @@ export function LoginForm() {
         sx={{ mt: 1 }}
       >
         {submitting ? "Signing in..." : "Sign in"}
+      </Button>
+
+      <Button
+        type="button"
+        variant="text"
+        fullWidth
+        onClick={handleGoToSignUp}
+      >
+        Don&apos;t have an account? Create one
       </Button>
     </Box>
   );

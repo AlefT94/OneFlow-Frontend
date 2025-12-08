@@ -1,4 +1,4 @@
-import { useAuthContext } from "../../../App/providers/AuthProvider";
+import { useAuthContext } from "../../../app/providers/AuthProvider";
 import {
   Box,
   AppBar,

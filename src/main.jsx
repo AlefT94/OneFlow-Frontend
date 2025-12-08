@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
-import { App } from "./App/App"; // ajuste o caminho se for ./app/App
+import { App } from "./app/App"; // ajuste o caminho se for ./app/App
 import "./styles/globals.css";
 
 const theme = createTheme({

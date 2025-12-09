@@ -21,8 +21,9 @@ const drawerWidth = 240;
 
 const menuItems = [
   { label: "Dashboard", path: "/" },
-  { label: "Services", path: "/services" },
   { label: "Customers", path: "/customers" },
+  { label: "Services", path: "/services" },
+  { label: "Products", path: "/products" },
 ];
 
 export function MainLayout({ children }) {

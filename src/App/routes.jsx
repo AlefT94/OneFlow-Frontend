@@ -6,6 +6,7 @@ import {useAuthContext} from "./providers/AuthProvider";
 import { DashboardHomePage } from "../features/dashboard/pages/DashboardHomePage";
 import {ServicesPage} from "../features/services/pages/ServicesPage"
 import { CustomersPage } from "../features/customers/pages/CustomerPage";
+import { ProductsPage } from "../features/products/pages/ProductPage";
 
 function PrivateRoute({ children }) {
   const { isAuthenticated, loading } = useAuthContext();
@@ -46,8 +47,8 @@ export function AppRoutes() {
           <PrivateRoute>
             <ServicesPage />
           </PrivateRoute>
-        }
-      />
+          }
+        />
 
       <Route
       path="/customers"
@@ -55,8 +56,17 @@ export function AppRoutes() {
         <PrivateRoute>
           <CustomersPage />
         </PrivateRoute>
-      }
-    />
+        }
+      />
+
+      <Route
+      path="/products"
+      element={
+        <PrivateRoute>
+          <ProductsPage />
+        </PrivateRoute>
+        }
+      />
 
         {/* fallback */}
         <Route path="*" element={<Navigate to="/" replace />} />

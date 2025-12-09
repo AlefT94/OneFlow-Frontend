@@ -22,7 +22,7 @@ const drawerWidth = 240;
 const menuItems = [
   { label: "Dashboard", path: "/" },
   { label: "Services", path: "/services" },
-  // depois você adiciona: Customers, Appointments, Billing, etc.
+  { label: "Customers", path: "/customers" },
 ];
 
 export function MainLayout({ children }) {

@@ -145,7 +145,7 @@ export function MainLayout({ children }) {
           p: 3,
           mt: 8, // espaço pro AppBar
           bgcolor: "background.default",
-          ...(isDesktop && { ml: `${100}px` }), // empurra pra direita quando tiver sidebar fixa
+          ...(isDesktop && { ml: `${30}px`,  mr: `${50}px`}), // empurra pra direita quando tiver sidebar fixa
         }}
       >
         {children}

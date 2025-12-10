@@ -7,6 +7,7 @@ import { DashboardHomePage } from "../features/dashboard/pages/DashboardHomePage
 import {ServicesPage} from "../features/services/pages/ServicesPage"
 import { CustomersPage } from "../features/customers/pages/CustomerPage";
 import { ProductsPage } from "../features/products/pages/ProductPage";
+import { EstimatesPage } from "../features/estimates/pages/EstimatesPage";
 
 function PrivateRoute({ children }) {
   const { isAuthenticated, loading } = useAuthContext();
@@ -64,6 +65,15 @@ export function AppRoutes() {
       element={
         <PrivateRoute>
           <ProductsPage />
+        </PrivateRoute>
+        }
+      />
+
+      <Route
+      path="/estimates"
+      element={
+        <PrivateRoute>
+          <EstimatesPage />
         </PrivateRoute>
         }
       />

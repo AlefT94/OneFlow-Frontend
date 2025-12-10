@@ -24,6 +24,7 @@ const menuItems = [
   { label: "Customers", path: "/customers" },
   { label: "Services", path: "/services" },
   { label: "Products", path: "/products" },
+  { label: "Estimates", path: "/estimates" },
 ];
 
 export function MainLayout({ children }) {

@@ -15,7 +15,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useNavigate, useLocation } from "react-router-dom";
-import { useAuthContext } from "../../app/providers/AuthProvider";
+import { useAuthContext } from "../../App/providers/AuthProvider";
 
 const drawerWidth = 240;
 

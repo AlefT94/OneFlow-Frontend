@@ -1,6 +1,6 @@
 import { MainLayout } from "../../../components/layout/MainLayout";
 import { Typography, Box } from "@mui/material";
-import { useAuthContext } from "../../../app/providers/AuthProvider";
+import { useAuthContext } from "../../../App/providers/AuthProvider";
 
 export function DashboardHomePage() {
   const { user } = useAuthContext();

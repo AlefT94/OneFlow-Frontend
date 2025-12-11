@@ -7,7 +7,7 @@ import {
   Typography,
   Stack,
 } from "@mui/material";
-import { useAuthContext } from "../../../app/providers/AuthProvider";
+import { useAuthContext } from "../../../App/providers/AuthProvider";
 import { useNavigate } from "react-router-dom";
 
 export function LoginForm() {
